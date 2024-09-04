@@ -9,7 +9,7 @@ public class minHeap{
         root = null;
     }
 
-    public void insert(int data) {
+    public void insert(int data) {  // O(log N)
         root = insertRec(root, data);
         heapify(root);
     }
@@ -59,11 +59,11 @@ public class minHeap{
 
     }
 
-    public int peek() {
+    public int peek() {  // O(1)
         return root.data;
     }
 
-    public int remove() {
+    public int remove() {  // O(N)
 
         if (root == null) {
             throw new RuntimeException("Heap is empty");
@@ -105,7 +105,7 @@ public class minHeap{
         return root;
     }
 
-    private void printRec(Node root){
+    private void printRec(Node root){  // O(N)
         if(root == null){
             return;
         }

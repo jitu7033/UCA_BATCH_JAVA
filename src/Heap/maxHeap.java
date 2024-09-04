@@ -9,7 +9,7 @@ public class maxHeap {
         root = null;
     }
 
-    public void insert(int data) {
+    public void insert(int data) { // O(log n)
         root = insertRec(root, data);
         heapify(root);
     }
@@ -59,11 +59,11 @@ public class maxHeap {
 
     }
 
-    public int peek() {
+    public int peek() { // O(1)
         return root.data;
     }
 
-    public int remove() {
+    public int remove() { // O(n)
 
         if (root == null) {
             throw new RuntimeException("Heap is empty");
