@@ -1,7 +1,7 @@
 package Heap;
 
 
-public class maxHeapUsingLinkedList1 {
+public class Main {
     public static void main(String[] args) {
 
         // max heap are int top
