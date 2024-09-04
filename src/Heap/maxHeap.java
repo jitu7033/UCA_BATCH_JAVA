@@ -78,7 +78,6 @@ public class maxHeap {
         queue.add(root);
         Node lastNode = null;
         Node parent = null;
-
         while (!queue.isEmpty()) {
             lastNode = queue.poll();
             if (lastNode.left != null) {
