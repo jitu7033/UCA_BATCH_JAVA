@@ -6,7 +6,6 @@ class List<T>{
     private Object[] elements;
     private int size;
     private static final int INITIAL_CAPACITY = 10;
-
     public List(){
         elements = new Object[INITIAL_CAPACITY];
         size = 0;
